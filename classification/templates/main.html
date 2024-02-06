@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salary pred application</title>
+</head>
+<body>
+    <h1>Salary Predicion Application</h1>
+    <hr>
+    <form action="{% url 'result' %}">
+        age: <input type="number" name="age" required><br><br>
+
+        work class : 
+        <select name="workclass" id="">
+            <option value="1">State-gov</option>
+            <option value="2">Self-emp-not-inc</option>
+            <option value="3">Private</option>
+            <option value="4">Federal-gov</option>
+            <option value="5">Local-gov</option>
+            <option value="6">?</option>
+            <option value="7">Without-pay</option>
+            <option value="8">Never-worked</option>
+            
+        </select>
+
+        <br><br>
+
+        <!-- population final wieght: <input type="number" name="fnlwgt"><br><br> -->
+         
+        education :
+        <select name="education" id="">
+            <option value="1">Bachelors</option>>
+            <option value="2">HS-grad</option>>
+            <option value="3">11th</option>>
+            <option value="4">Masters</option>>
+            <option value="5">9th</option>>
+            <option value="6">Some-college</option>>
+            <option value="7">Assoc-acdm</option>>
+            <option value="8">7th-8th</option>>
+            <option value="9">Doctorate</option>>
+            <option value="10">Prof-school</option>>
+            <option value="11">5th-6th</option>>
+            <option value="12">10th</option>>
+            <option value="13">1st-4th</option>>
+            <option value="14">Preschool</option>>
+            <option value="15">10th</option>>
+            <option value="16">12th</option>>
+        </select>
+        <br><br>
+        <!-- education: <input type="text" name="education"><br> -->
+
+        merital_status :
+        <select name="marital-status" id="">
+            <option value="1">Never-married</option>
+            <option value="2">Married-civ-spouse</option>
+            <option value="3">Divorced</option>
+            <option value="4">Married-spouse-absent</option>
+            <option value="5">Separated</option>
+            <option value="6">Married-AF-spouse</option>
+            <option value="7">Widowed</option>
+            
+        </select>
+        <!-- marital-status:  <input type="text" name="marital-status"><br><br> -->
+        <br><br>
+
+        occupation : 
+        <select name="occupation" id="">
+            <option value="1">Adm-clerical</option>
+            <option value="2">Exec-managerial</option>
+            <option value="3">Handlers-cleaners</option>
+            <option value="3">Prof-specialty</option>
+            <option value="3">Other-service</option>
+            <option value="4">Sales</option>
+            <option value="5">Craft-repair</option>
+            <option value="6">Transport-moving</option>
+            <option value="7">Farming-fishing</option>
+            <option value="8">Machine-op-inspct</option>
+            <option value="9">Tech-support</option>
+            <option value="10">?</option>
+            <option value="11">Protective-serv</option>
+            <option value="12">Armed-Forces</option>
+            <option value="13">Priv-house-serv</option>
+        </select>
+        <br><br>
+
+
+        <!-- occupation: <input type="text" name="occupation"> -->
+        sex :
+        <select name="sex" id="">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </select>
+        <br><br>
+
+
+
+        <!-- sex:  <input type="text" name="sex"> -->
+        <!-- <br><br> -->
+        capital-gain: <input type="number" name="capital-gain"><br><br>
+
+        capital-loss: <input type="number" name="capital-loss"><br><br>
+
+        hours-per-week: <input type="number" name="hours-per-week"><br><br>  
+
+       country_name :
+       <select name="native-country" id="">
+        <option value="1">United-States</option>
+        <option value="2">Cuba</option>
+        <option value="3">Jamaica</option>
+        <option value="4">India</option>
+        <option value="5">?</option>
+        <option value="6">Mexico</option>
+        <option value="7">South</option>
+        <option value="8">Puerto-Rico</option>
+        <option value="9">Honduras</option>
+        <option value="10">England</option>
+        <option value="11">Canada</option>
+        <option value="12">Germany</option>
+        <option value="13">Iran</option>
+        <option value="14">Philippines</option>
+        <option value="15">Italy</option>
+        <option value="16">Poland</option>
+        <option value="17">Columbia</option>
+        <option value="18">Cambodia</option>
+        <option value="19">Thailand</option>
+        <option value="20">Ecuador</option>
+        <option value="21">Laos</option>
+        <option value="22">Taiwan</option>
+        <option value="23">Haiti</option>
+        <option value="24">Portugal</option>
+        <option value="25">Dominican-Republic</option>
+        <option value="26">El-Salvador</option>
+        <option value="27">France</option>
+        <option value="28">Guatemala</option>
+        <option value="29">China</option>
+        <option value="30">Japan</option>
+        <option value="31">Yugoslavia</option>
+        <option value="32">Peru</option>
+        <option value="33">Outlying-US(Guam-USVI-etc)</option>
+        <option value="34">Scotland</option>
+        <option value="35">Trinadad&Tobago</option>
+        <option value="36">Greece</option>
+        <option value="37">Nicaragua</option>
+        <option value="38">Vietnam</option>
+        <option value="39">Hong</option>
+        <option value="40">Ireland</option>
+        <option value="41">Hungary</option>
+        <option value="42">Holand-Netherlands</option>
+        
+        
+       </select>
+       <br><br>
+       
+        <!-- <br><native-country: <input type="text" name="native-country">br> -->
+
+        <input type="submit"  >	   	
+        
+    </form>
+</body>
+</html>

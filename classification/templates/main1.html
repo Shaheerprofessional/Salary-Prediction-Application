@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Prediction Application</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label, input, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="{% url 'result' %}">
+        <h1>Salary Prediction Application</h1>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required>
+
+        <label for="workclass">Work Class:</label>
+        <select name="workclass" id="workclass">
+            <option value="1">State-gov</option>
+            <option value="2">Self-emp-not-inc</option>
+            <option value="3">Private</option>
+            <option value="4">Federal-gov</option>
+            <option value="5">Local-gov</option>
+            <option value="6">?</option>
+            <option value="7">Without-pay</option>
+            <option value="8">Never-worked</option>
+        </select>
+
+        <label for="education">Education:</label>
+        <select name="education" id="education">
+            <!-- Add your education options here -->
+            <option value="1">Bachelor's</option>
+            <option value="2">Master's</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="marital-status">Marital Status:</label>
+        <select name="marital-status" id="marital-status">
+            <!-- Add your marital status options here -->
+            <option value="1">Single</option>
+            <option value="2">Married</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="occupation">Occupation:</label>
+        <select name="occupation" id="occupation">
+            <!-- Add your occupation options here -->
+            <option value="1">Software Engineer</option>
+            <option value="2">Teacher</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="sex">Sex:</label>
+        <select name="sex" id="sex">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </select>
+
+        <label for="capital-gain">Capital Gain:</label>
+        <input type="number" name="capital-gain" id="capital-gain">
+
+        <label for="capital-loss">Capital Loss:</label>
+        <input type="number" name="capital-loss" id="capital-loss">
+
+        <label for="hours-per-week">Hours Per Week:</label>
+        <input type="number" name="hours-per-week" id="hours-per-week">
+
+        <label for="native-country">Country Name:</label>
+        <select name="native-country" id="native-country">
+            <!-- Add your country options here -->
+            <option value="1">United States</option>
+            <option value="2">Canada</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <input type="submit" value="Predict Salary">
+    </form>
+</body>
+
+</html>
